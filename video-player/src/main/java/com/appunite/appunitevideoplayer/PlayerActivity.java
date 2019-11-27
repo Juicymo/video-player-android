@@ -154,8 +154,8 @@ public class PlayerActivity extends Activity implements SurfaceHolder.Callback,
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.player_activity);
+        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         root = (ViewGroup) findViewById(R.id.root);
         root.setOnTouchListener(new OnTouchListener() {
             @Override
